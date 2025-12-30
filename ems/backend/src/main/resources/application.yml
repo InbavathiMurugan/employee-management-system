@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/ems_db?createDatabaseIfNotExist=true
+    username: root
+    password: mysql2004
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  application:
+    name: ems-backend
+
+server:
+  port: 8080
